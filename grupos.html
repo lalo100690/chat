@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<script src="fun.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+
+
+
+</head>
+<body>
+	<div class="circulo"></div>
+
+	<nav></nav>
+
+	<div class="tab" id="chats" onclick="navegar('chats')">CHATS</div>
+	<div class="tab activo" id="grupos">GRUPOS</div>
+
+	<section class="entrada">
+		<div class="chat oculto" onclick="verChat(this.id,'grupos')">
+			<h1>Nombre</h1>
+			<h2>Mensaje</h2>
+		</div>
+		<div class="chat oculto">
+			<h1>Nombre</h1>
+			<h2>Mensaje</h2>
+		</div><div class="chat oculto">
+			<h1>Nombre</h1>
+			<h2>Mensaje</h2>
+		</div><div class="chat oculto">
+			<h1>Nombre</h1>
+			<h2>Mensaje</h2>
+		</div>
+	</section>
+
+
+	<script>
+		window.addEventListener('load', inicializarChats, true);
+	</script>
+
+</body>
+</html>

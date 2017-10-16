@@ -1,0 +1,175 @@
+:root{
+	--degradado: linear-gradient(90deg, #5b30aa, #733db9);
+	--gris: #e8ecf3;
+	--rojo: #fc2367;
+
+}
+
+*{
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Open Sans';
+}	
+
+nav{
+	width: 100%;
+	height: 60px;
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	background: var(--degradado);
+}
+
+.tab{
+	width: 50%;
+	text-align: center;
+	float: left;
+	margin-top: 60px;
+	height: 40px;
+	line-height: 40px;
+	color: rgba(0,0,0,.3);
+	box-sizing: border-box;
+	font-size: .9em;
+	transition: .2s all;
+	border-bottom: 1px solid transparent;
+}
+
+	.activo{
+		border-bottom: 40px solid var(--rojo);
+		color: white
+	}
+
+section, article{
+	width: 100%;
+	position: fixed;
+	top: 100px;
+	height: calc(100% - 100px);
+	background: var(--gris);
+}
+
+article{
+	top: 60px;
+	height: calc(100% - 110px)
+}
+
+footer{
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+	height: 50px;
+	width: 100%;
+	background: yellow;
+}
+
+.entrada{
+	animation-name: entrada;
+	animation-duration: .5s;
+}
+
+	@keyframes entrada{
+		from {
+			left: 50%;
+			opacity: 0;
+		}
+		to{
+			left: 0px;
+			opacity: 1;
+		}
+	}
+
+.salida{
+	animation-name: salida;
+	animation-duration: .5s;
+	left: -100%;
+}
+
+	@keyframes salida{
+		from {
+			left: 0%;
+			opacity: 1;
+		}
+		to{
+			left: -50%;
+			opacity: 0;
+		}
+	}
+
+.chat{
+	width:calc(100% - 6px);
+	margin-left: 3px;
+	background: white;
+	height: 60px;
+	line-height: 40px;
+	border-bottom: 1px solid rgba(0,0,0,.1);
+	transition: .2s all;
+	opacity: 1;
+	margin-top: 3px;
+	border-radius: 3px;
+}
+
+.chat h1{
+	font-size: .8em;
+	font-weight: lighter;
+	height: 20px;
+	line-height: 20px;
+	box-sizing: border-box;
+	padding-left: 3px;
+	color: var(--rojo);
+
+}
+
+.chat h2{
+	font-size: .8em;
+	font-weight: lighter;
+	height: 30px;
+	line-height: 20px;
+	box-sizing: border-box;
+	padding-left: 3px;
+	color: rgba(0,0,0,.7)
+}
+
+.oculto{
+	margin-left: 25%;
+	opacity: 0;
+}
+
+.circulo{
+	width: 50px;
+	height: 50px;
+	background: var(--rojo);
+	position: fixed;
+	top: calc(50% - 25px);
+	left: calc(50% - 25px);
+	z-index:999999;	
+	border-radius: 50%;
+	transition: .5s all;
+	transform:scale(.0001);
+}
+
+	.grow-circulo{
+		transform: scale(20);
+	}
+
+.bg-rojo{
+	background: var(--rojo);
+}
+
+nav h1{
+	font-size: 1em;
+	line-height: 60px;
+	color: white;
+	font-weight: 300;
+}
+
+nav i{
+	width: 20px;
+	font-size: 1.4em !important;
+	float: left;
+	line-height: 60px !important;
+	margin-left: 3px;
+	display: block;
+	height: 60px;
+	color: rgba(255,255,255,.6);
+}
+
+
