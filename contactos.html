@@ -12,13 +12,12 @@
 
 </head>
 <body>
+	<div class="circulo grow-circulo"></div>
 
-	<div class="circulo"></div>
-
-	<nav></nav>
-
-	<div class="tab activo" id="chats">CHATS</div>
-	<div class="tab" id="grupos" onclick="navegar('grupos')">GRUPOS</div>
+	<nav class="bg-rojo">
+		<i class="fa fa-angle-left" onclick="regresoDeChat()"></i>
+		<h1>Contactos</h1>
+	</nav>
 
 	<section class="entrada">
 		<div class="chat oculto" onclick="verChat(this.id,'grupos')">
@@ -27,12 +26,8 @@
 		</div>
 	</section>
 
-	<div class="add hide-add" onclick="verContactos()">
-		<i class="fa fa-comments" aria-hidden="true"></i>
-	</div>
-
 	<script>
-		window.addEventListener('load', inicializarChats, true);
+		window.addEventListener('load', cargarContactos, true);
 	</script>
 
 </body>

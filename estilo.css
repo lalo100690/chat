@@ -97,15 +97,15 @@ footer{
 	}
 
 .chat{
-	width:calc(100% - 6px);
-	margin-left: 3px;
+	width:calc(100% - 20px);
+	margin-left: 10px;
 	background: white;
 	height: 70px;
 	line-height: 40px;
 	border-bottom: 1px solid rgba(0,0,0,.1);
 	transition: .2s all;
 	opacity: 1;
-	margin-top: 3px;
+	margin-top: 10px;
 	border-radius: 3px;
 }
 
@@ -253,6 +253,7 @@ footer>button{
 	z-index: 999999999999;
 	background: var(--rojo);
 	text-align: center;
+	transition: .3s all
 }
 
 	.add>i{
@@ -260,3 +261,7 @@ footer>button{
 		font-size: 2em;
 		line-height: 60px;
 	}
+
+.hide-add{
+	bottom: -100px
+}

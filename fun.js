@@ -19,6 +19,7 @@ function cargarChats(){
 			cargarChats();
 		},100)	
 	}
+	document.querySelector('.add').classList.remove('hide-add')
 }
 
 function navegar(pagina){
@@ -30,16 +31,25 @@ function navegar(pagina){
 		document.getElementById('grupos').classList.add('activo')
 	}
 	document.querySelector('section').classList.add('salida');
+	document.querySelector('.add').classList.add('hide-add')
 	setTimeout(function(){
 		window.location.assign(pagina + '.html');
 	},600)
 }
 
 function verChat(id, pagina){
-	localStorage.setItem('pagina',pagina);
+	document.querySelector('.add').classList.add('hide-add')
 	document.querySelector('.circulo').classList.add('grow-circulo')
 	setTimeout(function(){
 		window.location.assign('chat.html');
+	},600)
+}
+
+function verContactos(){
+	document.querySelector('.add').classList.add('hide-add')
+	document.querySelector('.circulo').classList.add('grow-circulo')
+	setTimeout(function(){
+		window.location.assign('contactos.html');
 	},600)
 }
 
@@ -49,12 +59,17 @@ function cargarChat(){
 	},300)
 }
 
+function cargarContactos(){
+	setTimeout(function(){
+		document.querySelector('.circulo').classList.remove('grow-circulo')
+	},300)
+}
+
 function regresoDeChat(){
 	document.querySelector('.circulo').classList.add('grow-circulo');
 	document.querySelector('.circulo').style.background = 'white';
-	pag = localStorage.getItem('pagina');
 	setTimeout(function(){
-		window.location.assign(pag+'.html');
+		window.location.assign('index.html');
 	},600);
 }
 
