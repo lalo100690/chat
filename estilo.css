@@ -157,7 +157,7 @@ footer{
 }
 
 nav h1{
-	font-size: 1em;
+	font-size: 1.5em;
 	line-height: 60px;
 	color: white;
 	font-weight: 300;
@@ -243,3 +243,20 @@ footer>button{
 		}
 	}
 
+.add{
+	position: fixed;
+	right: 10px;
+	bottom: 10px;
+	height: 60px;
+	width: 60px;
+	border-radius: 30px;
+	z-index: 999999999999;
+	background: var(--rojo);
+	text-align: center;
+}
+
+	.add>i{
+		color: white;
+		font-size: 2em;
+		line-height: 60px;
+	}
