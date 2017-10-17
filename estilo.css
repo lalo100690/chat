@@ -49,7 +49,9 @@ section, article{
 
 article{
 	top: 60px;
-	height: calc(100% - 110px)
+	height: calc(100% - 130px);
+	overflow: scroll;
+	padding-bottom: 80px;
 }
 
 footer{
@@ -204,4 +206,40 @@ footer>button{
 
 }
 
+.msj{
+	border-radius: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+	padding: 10px;
+	margin-top: 10px;
+	color: white;
+	clear: both;
+	max-width: 250px;
+}
+
+.mio{
+	float: right;
+	background: var(--degradado);
+}
+
+.entrante{
+	float: left;
+	background: var(--rojo);
+}
+
+.entradaMSJ{
+	animation-duration: .1s;
+	animation-name: entradaMSJ;
+}
+
+@keyframes entradaMSJ{
+		from {
+			margin-top: 100px;
+			opacity: 0;
+		}
+		to{
+			margin-top: 10px;
+			opacity: 1;
+		}
+	}
 

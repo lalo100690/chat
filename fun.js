@@ -58,6 +58,17 @@ function regresoDeChat(){
 	},600);
 }
 
+function mandarMsj(){
+	msj = document.getElementById('msj');
+	document.querySelector('article').innerHTML += "<div class='msj mio entradaMSJ'>"+msj.value+"</div>"
+	msj.value = "";
+	setTimeout(function(){
+		document.querySelector('.entradaMSJ').classList.remove('entradaMSJ')
+	},500)
+	
+
+}
+
 
 
 
